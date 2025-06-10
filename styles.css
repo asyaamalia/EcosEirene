@@ -1,0 +1,193 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "superkids";
+  src: url(Super\ Kinds.ttf);
+}
+
+.logo {
+  font-family: 'Spicy Rice', cursive;
+  font-size: 32px;
+  color: #eef2e2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+nav {
+  background-color: #a64980;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Mountains of Christmas', serif;
+  color: #eef2e2;
+  font-weight: 600;
+  padding: 8px;
+  transition: all 0.5s;
+  border-bottom: 1px solid transparent;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid #D8DBBD;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+#tentang-eirene {
+  background-color:rgb(254, 212, 255);
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.eirene-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.eirene-title {
+  font-size: 24px;
+  color: #a64980;
+  font-family: 'Spicy Rice', cursive;
+  padding-bottom: 5px;
+  white-space: nowrap;
+  flex: 0 0 220px; 
+  display: inline-block;
+}
+
+.eirene-content {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  flex: 1 1 600px; }
+
+#tentang {
+  background-color:rgb(254, 212, 255);
+  padding: 60px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title h2 {
+  font-size: 32px;
+  color: #a64980;
+  margin-bottom: 5px;
+  font-family: 'Spicy Rice', cursive;
+  border-bottom: 3px solid #a64980;
+  display: inline-block;
+}
+
+.content p {
+  font-size: 16px;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+/* Profile Cards Row - 4 dalam 1 baris dan rapat */
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow-x: auto;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+/* Profile Card */
+.profile-card {
+  flex: 0 0 calc(25% - 7.5px); /* Empat kartu dengan gap 10px */
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  min-width: 260px;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile-card h3 {
+  color: #888;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.profile-card h4 {
+  color: #a64980;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+main > section {
+  height: 100vh;
+  background: #fff;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+}
+
+#design{
+  background-color: rgb(254, 212, 255);
+  padding: 60px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+img {
+  display: block;
+  margin: auto;
+}
+
